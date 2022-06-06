@@ -1,0 +1,59 @@
+h1 {
+    color: red;
+}
+
+.titulo {
+    color: violet;
+    text-decoration: underline;
+}
+
+.titulo:hover {
+    color: yellowgreen;
+}
+
+#capitulo {
+    color:green;
+}
+
+.titulo h1 {
+    background-color: gray;
+    color: gold;
+}
+
+div {
+    border: 1px solid black;
+}
+
+h2.titulo {
+    background-color: aquamarine;
+}
+
+h2 > i {
+    color:darkviolet;
+}
+
+.bordas {
+    border: 1px solid gray;
+    background-color: silver;
+}
+
+.bordas.titulo {
+    
+}
+
+.btn {
+    background-color: mediumseagreen;
+    color: white;
+    border: 1px solid black;
+    padding: 8px;
+    border-top: 6px solid cornflowerblue;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.btn:hover {
+    background-color: greenyellow;
+}
+
+.btn:active {
+    text-decoration: underline;
+}

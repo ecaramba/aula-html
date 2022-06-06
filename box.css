@@ -1,0 +1,29 @@
+.menu {
+    background-color:red;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 5px solid gold;
+    width: 20%;
+    display: inline;
+}
+
+.pagina {
+    background-color: blue;  
+    display: inline-block;
+    margin-left: 20px;
+    width:80%;
+}
+
+a {
+    color:green;
+}
+
+.link {
+    color:deeppink;
+}
+
+a:hover{
+    color: orangered;
+    font-size: 20pt;
+    cursor: zoom-in;
+}
