@@ -54,8 +54,14 @@ var num3 = prompt("Digite o num 3");
 
 // Maior
 if (num1 > num2)
-{
-    console.log("O numero: " + num1 + " é o maior");
+{   
+    if (num1 > num3)
+    {
+        console.log("O numero: " + num1 + " é o maior");
+    } else
+    {
+        console.log("O numero: " + num3 + " é o maior");
+    }
 } else 
 {
     if (num2 > num3)
@@ -80,6 +86,12 @@ if (num1 < num2)
     
 } else 
 {
-    console.log("O numero: " + num2 + " é o menor");
+    if (num2 < num3)
+    {
+        console.log("O numero: " + num2 + " é o menor");
+    } else
+    {
+        console.log("O numero: " + num3 + " é o menor");
+    }
 }
 
