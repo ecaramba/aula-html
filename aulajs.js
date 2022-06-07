@@ -44,3 +44,25 @@ if (num1 > num2)
 
 // exec 2
 // peça 3 numeros e dizer o maior e tmb o menor
+//  num1 = 1 
+//  num2 = 2 
+//  num3 = 3 
+
+var num1 = prompt("Digite o num 1");
+var num2 = prompt("Digite o num 2");
+var num3 = prompt("Digite o num 3");
+
+if (num1 > num2)
+{
+    console.log("O numero: " + num1 + " é o maior");
+} else 
+{
+    if (num2 > num3)
+    {
+        console.log("O numero: " + num2 + " é o maior");
+    } else 
+    {
+        console.log("O numero: " + num3 + " é o maior");
+    }
+}
+
