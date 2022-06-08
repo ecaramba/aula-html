@@ -7,12 +7,38 @@
     <title>Funções</title>
 
     <script src="fun.js"></script>
+
+    <style>
+        #resultado {
+            border: 1px solid black;
+            margin: 10px 0;
+            padding: 6px;
+            background-color: silver;
+        }
+        
+    </style>
 </head>
 <body>
 
     <h1>Funçoes JS</h1>
 
     <button onclick="clique()">Clique aqui</button>
+
+    <hr />
+
+    <label>Num 1</label>
+    <input type="text" id="num1" value="" />
+
+    <br />
+    <label>Num 2</label>
+    <input type="text" id="num2" />
+
+    <br />
+    <button onclick="somar()">Soma</button>
+
+    <div id="resultado">
+        Resultado
+    </div>
     
 </body>
 </html>

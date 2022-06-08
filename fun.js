@@ -7,7 +7,6 @@ function soma(n1, n2)
 }
 
 
-
 function clique()
 {
     var num1 = prompt("Digite o num 1");
@@ -16,4 +15,15 @@ function clique()
     var resultado = soma(num1, num2);
 
     console.log(resultado);
+}
+
+function somar()
+{
+    var input1 = document.getElementById("num1");
+    console.log(input1.value);
+
+    var resultado = document.getElementById("resultado");
+    
+    
+
 }
