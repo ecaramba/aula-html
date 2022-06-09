@@ -20,10 +20,26 @@ function clique()
 function somar()
 {
     var input1 = document.getElementById("num1");
-    console.log(input1.value);
+    var input2 = document.getElementById("num2");
+
+    var valor = soma(input1.value, input2.value);
 
     var resultado = document.getElementById("resultado");
-    
-    
+    resultado.innerHTML = valor;
 
 }
+
+function tratar(evento)
+{
+
+    if (evento.keyCode <= 48 || evento.keyCode >= 57)
+    {
+        // evita o evento padrão
+        evento.preventDefault();
+        
+    }
+}
+
+var input1 = document.getElementById("num1");
+
+input1.addEventListener("keydown", tratar);
