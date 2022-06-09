@@ -1,4 +1,5 @@
 // E -> P -> S
+// I -> O
 
 function soma(n1, n2)
 {
@@ -32,7 +33,9 @@ function somar()
 function tratar(evento)
 {
 
-    if (evento.keyCode <= 48 || evento.keyCode >= 57)
+    console.log(evento);
+
+    if (evento.keyCode < 48 || evento.keyCode > 57)
     {
         // evita o evento padrão
         evento.preventDefault();
