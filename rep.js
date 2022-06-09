@@ -13,8 +13,14 @@ function repetir()
 
     while (atual < vezes)
     {
-        resultado.innerHTML = resultado.innerHTML + "<br>" + texto.value;
+        resultado.innerHTML +=  "<br>" + texto.value;
         
-        atual = atual + 1;
+        atual++; // incrementa o contador em 1
     } 
+
+    
+    for (var contador = 0; contador < vezes; contador++)
+    {
+        resultado.innerHTML +=  "<br>" + texto.value;
+    }
 }
