@@ -7,6 +7,12 @@
     <title>Aula de Jquery</title>
     <script src="jquery-3.6.0.js"></script>
     <script src="jq.js"></script>
+
+    <style>
+        h1.teste{
+            color: gold;
+        }
+    </style>
 </head>
 <body>
     
@@ -17,7 +23,24 @@
 
     <p class="teste">teste de texto</p>
 
-    <button id="btn">Clique aqui</button>
+
+    <select id="cores">
+        <option value="red">Vermelho</option>
+        <option value="green">Verde</option>
+        <option value="blue">Azul</option>
+        <option value="yellow">Amarelo</option>
+    </select>
+
+    <input type="text" id="nome" value="João">
+
+    <input type="radio" name="sexo" value="M" checked>Masculino
+    <input type="radio" name="sexo" value="F">Feminino
+
+    <input type="checkbox" name="check" value="check">Checkbox
+    <input type="checkbox" name="check" value="check">Checkbox
+    <input type="checkbox" name="check" value="check">Checkbox
+    
+    <button id="btn">mudar Cor</button>
 
 </body>
 </html>
