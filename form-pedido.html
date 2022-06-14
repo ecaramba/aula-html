@@ -7,6 +7,7 @@
     <title>Form de Pedido</title>
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="jquery-3.6.0.js"></script>
 </head>
 <body class="bg-light">
     
@@ -79,22 +80,8 @@
                             </tr>
                         </thead>
 
-                        <tbody>
-                            <tr>
-                                <td>1234</td>
-                                <td>Parufuso</td>
-                                <td>120</td>
-                            </tr>
-                            <tr>
-                                <td>3456</td>
-                                <td>Porcas</td>
-                                <td>120</td>
-                            </tr>
-                            <tr>
-                                <td>3678</td>
-                                <td>Chave de Fenda</td>
-                                <td>1</td>
-                            </tr>
+                        <tbody id="produtos-cadastrados">
+                           
                         </tbody>
                     </table>
 
@@ -128,17 +115,18 @@
                 </div>
                 <div class="col-12 mb-3">                            
                     <label  class="ms-2">Quantidade</label>
-                    <input id="quantidade" type="text" class="form-control">
+                    <input id="quantidade" type="number" max="100" min="1" class="form-control">
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                <button type="button" class="btn btn-primary">Adicionar</button>
+                <button type="button" id="bt-cancelar" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" id="bt-adicionar" class="btn btn-primary">Adicionar</button>
             </div>
         </div>
     </div>
 </div>
 
     <script src="js/bootstrap.bundle.js"></script>
+    <script src="pedidos.js"></script>
 </body>
 </html>
