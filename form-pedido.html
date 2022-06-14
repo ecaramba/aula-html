@@ -28,13 +28,21 @@
                     <div class="row">
 
                         <div class="col-12 form-floating mb-3">                            
-                            <input id="nome-cliente" type="text" class="form-control" placeholder="Nome do Cliente">
+                            <input id="nome-cliente" type="text" class="form-control is-invalid" placeholder="Nome do Cliente">
                             <label for="nome-cliente" class="ms-2">Nome do Cliente</label>
+
+                            <div class="invalid-feedback">
+                                Nome do Cliente é obrigatório.
+                            </div>
                         </div>
                         
                         <div class="col-6 form-floating mb-3">                            
                             <input id="cpf" type="text" class="form-control" placeholder="CPF">
                             <label for="cpf" class="ms-2">CPF</label>
+                            
+                            <div class="invalid-feedback">
+                                CPF é obrigatório.
+                            </div>
                         </div>
 
                         <div class="col-6 form-floating mb-3">                            
@@ -44,6 +52,9 @@
                         <div class="col-12 form-floating mb-3">                            
                             <input id="email" type="text" class="form-control" placeholder="Email">
                             <label for="email" class="ms-2">Email</label>
+                            <div class="invalid-feedback">
+                                O E-mail é obrigatório.
+                            </div>
                         </div>
 
                     </div>
@@ -53,7 +64,11 @@
                 <div class="mt-5">
                     <h4>Produtos</h4>
 
-                    <button class="btn btn-primary float-end">Add Produto</button>
+                    <button 
+                        class="btn btn-primary float-end" 
+                        data-bs-toggle="modal" 
+                        data-bs-target="#modal-addProduto">
+                    Add Produto</button>
 
                     <table class="table">
                         <thead>
@@ -93,6 +108,36 @@
         </main>
 
     </div>
+
+    <!-- Modal -->
+<div class="modal fade" id="modal-addProduto">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Adicionar novo Produto</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="col-12 mb-3">                            
+                    <label  class="ms-2">Código</label>
+                    <input id="codigo" type="text" class="form-control">
+                </div>
+                <div class="col-12 mb-3">                            
+                    <label  class="ms-2">Nome</label>
+                    <input id="nome-produto" type="text" class="form-control">
+                </div>
+                <div class="col-12 mb-3">                            
+                    <label  class="ms-2">Quantidade</label>
+                    <input id="quantidade" type="text" class="form-control">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary">Adicionar</button>
+            </div>
+        </div>
+    </div>
+</div>
 
     <script src="js/bootstrap.bundle.js"></script>
 </body>
