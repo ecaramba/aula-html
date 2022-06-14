@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
-<body>
+<body class="bg-light">
     
     <div class="container">
 
@@ -22,11 +22,78 @@
 
             <!-- formulario -->
             <div class="row">
+                <!-- Dados do pedido -->
+                <div class="mt-5">
+                    <h4>Dados do Cliente</h4>
+                    <div class="row">
 
+                        <div class="col-12 form-floating mb-3">                            
+                            <input id="nome-cliente" type="text" class="form-control" placeholder="Nome do Cliente">
+                            <label for="nome-cliente" class="ms-2">Nome do Cliente</label>
+                        </div>
+                        
+                        <div class="col-6 form-floating mb-3">                            
+                            <input id="cpf" type="text" class="form-control" placeholder="CPF">
+                            <label for="cpf" class="ms-2">CPF</label>
+                        </div>
+
+                        <div class="col-6 form-floating mb-3">                            
+                            <input id="telefone" type="text" class="form-control" placeholder="Telefone">
+                            <label for="telefone" class="ms-2">Telefone</label>
+                        </div>
+                        <div class="col-12 form-floating mb-3">                            
+                            <input id="email" type="text" class="form-control" placeholder="Email">
+                            <label for="email" class="ms-2">Email</label>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Produtos -->
+                <div class="mt-5">
+                    <h4>Produtos</h4>
+
+                    <button class="btn btn-primary float-end">Add Produto</button>
+
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Código</th>
+                                <th>Nome</th>
+                                <th>Quantidade</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>1234</td>
+                                <td>Parufuso</td>
+                                <td>120</td>
+                            </tr>
+                            <tr>
+                                <td>3456</td>
+                                <td>Porcas</td>
+                                <td>120</td>
+                            </tr>
+                            <tr>
+                                <td>3678</td>
+                                <td>Chave de Fenda</td>
+                                <td>1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <!-- botões -->
+                <div class="mt-5">
+                    <button class="btn btn-success float-end btn-lg">Confirmar Pedido</button>
+                </div>
             </div>
         </main>
 
     </div>
 
+    <script src="js/bootstrap.bundle.js"></script>
 </body>
 </html>
