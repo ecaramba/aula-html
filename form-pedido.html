@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="jquery-3.6.0.js"></script>
+    <script src="jquery.mask.js"></script>
 </head>
 <body class="bg-light">
     
@@ -29,7 +30,7 @@
                     <div class="row">
 
                         <div class="col-12 form-floating mb-3">                            
-                            <input id="nome-cliente" type="text" class="form-control is-invalid" placeholder="Nome do Cliente">
+                            <input id="nome-cliente" type="text" class="form-control" placeholder="Nome do Cliente">
                             <label for="nome-cliente" class="ms-2">Nome do Cliente</label>
 
                             <div class="invalid-feedback">
@@ -89,7 +90,7 @@
 
                 <!-- botões -->
                 <div class="mt-5">
-                    <button class="btn btn-success float-end btn-lg">Confirmar Pedido</button>
+                    <button id="bt-confirmar" class="btn btn-success float-end btn-lg">Confirmar Pedido</button>
                 </div>
             </div>
         </main>
